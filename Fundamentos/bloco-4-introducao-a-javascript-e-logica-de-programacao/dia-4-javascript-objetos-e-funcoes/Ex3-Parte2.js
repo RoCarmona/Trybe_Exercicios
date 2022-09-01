@@ -5,7 +5,7 @@
 // verificaPalindrome('desenvolvimento');
 // Retorno esperado: false
 
-function verificaPolimetro(palavra){
+function verificaPalindrome(palavra){
     for (index in palavra) {
         if(palavra[index] !== palavra[(palavra.length -1) - index]){
             return false;
@@ -13,6 +13,27 @@ function verificaPolimetro(palavra){
     }
     return true;
 }
+
+function verificaPalindrome(string) {
+    let reverse = string.split('').reverse().join('');
+    
+    return reverse;
+  }
+  
+  console.log(verificaPalindrome('arara')); 
+  console.log(verificaPalindrome('desenvolvimento')); 
+
+  function verificaPalindrome(string) {
+    let reverse = string.split('').reverse().join('');
+    if (reverse === string) {
+      return true;
+    } else {
+      return false;
+    }
+  }
+  
+  console.log(verificaPalindrome('arara')); 
+  console.log(verificaPalindrome('desenvolvimento')); 
 
 // 2 - Crie uma função que receba um array de inteiros e retorne o índice do maior valor.
 // Array de teste: [2, 3, 6, 7, 10, 1];.
@@ -34,6 +55,10 @@ console.log(maiorNumero([2,3,6,7,10,1]));
 // 3 - Crie uma função que receba um array de inteiros e retorne o índice do menor valor.
 // Array de teste: [2, 4, 6, 7, 10, 0, -3];.
 // Valor esperado no retorno da função: 6.
+
+
+
+
 
 
 // 4 - Crie uma função que receba um array de nomes e retorne o nome com a maior quantidade de caracteres.
