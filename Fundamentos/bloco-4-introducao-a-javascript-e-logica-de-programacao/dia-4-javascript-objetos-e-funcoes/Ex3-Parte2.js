@@ -39,7 +39,7 @@ function verificaPalindrome(string) {
 // Array de teste: [2, 3, 6, 7, 10, 1];.
 // Valor esperado no retorno da função: 4.
 
-function maiorNumero (numeros){
+function indiceMaiorNumero (numeros){
     let maiorValor = 0;
     for (let indice in numeros) {
         if(numeros[maiorValor] < numeros[indice]){
@@ -49,14 +49,24 @@ function maiorNumero (numeros){
     return maiorValor;
 }
 
-console.log(maiorNumero([2,3,6,7,10,1]));
+console.log(indiceMaiorNumero([2,3,6,7,10,1]));
 
 
 // 3 - Crie uma função que receba um array de inteiros e retorne o índice do menor valor.
 // Array de teste: [2, 4, 6, 7, 10, 0, -3];.
 // Valor esperado no retorno da função: 6.
 
+function IndiceMenorNumero (numeros){
+    let menorValor = 0;
+    for (let indice in numeros) {
+        if(numeros[menorValor] > numeros[indice]){
+            menorValor = indice;
+        }
+    }
+    return menorValor;
+}
 
+console.log(IndiceMenorNumero([2, 4, 6, 7, 10, 0, -3]));
 
 
 
@@ -64,6 +74,20 @@ console.log(maiorNumero([2,3,6,7,10,1]));
 // 4 - Crie uma função que receba um array de nomes e retorne o nome com a maior quantidade de caracteres.
 // Array de teste: ['José', 'Lucas', 'Nádia', 'Fernanda', 'Cairo', 'Joana'];.
 // Valor esperado no retorno da função: Fernanda.
+
+function nomeMaiorCaracteres (nomes){
+    let nomeMaiorCaracteres = nomes[0];
+    for (let indice in nomes) {
+        if (nomeMaiorCaracteres.length< nomes[indice].length) {
+            nomeMaiorCaracteres = nomes[indice];
+        }
+    }
+
+    return nomeMaiorCaracteres;
+}
+console.log(nomeMaiorCaracteres(['José', 'Lucas', 'Nádia', 'Fernanda', 'Cairo', 'Joana']));
+
+
 
 // 🚀 5 - Crie uma função que receba um array de inteiros e retorne o inteiro que mais se repete.
 // Array de teste: [2, 3, 2, 5, 8, 2, 3];.
