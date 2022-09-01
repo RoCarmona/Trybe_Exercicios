@@ -121,10 +121,23 @@ function maisRepetido(numeros) {
   console.log(maisRepetido([2, 3, 2, 5, 8, 2, 3])); // 2
 
 
-
+Parte 2 - Exercicio 
 // 6 - Crie uma função que receba um número natural (número inteiro não negativo) N e retorne o somatório de todos os números de 1 até N.
 // Valor de teste: N = 5.
 // Valor esperado no retorno da função: 1+2+3+4+5 = 15.
+
+function somaNumeros (n) {
+    let total= 0;
+
+    for (let index = 0; index <= n; index += 1){
+        total = total + index;
+    }
+    return total;
+};
+console.log(somaNumeros(5));
+
+
+
 
 
 // 7 - Crie uma função que receba uma string word e outra string ending. Verifique se a string ending é o final da string word. Considere que a string ending sempre será menor que a string word.
@@ -134,3 +147,4 @@ function maisRepetido(numeros) {
 // Retorno esperado: true
 // verificaFimPalavra('joaofernando', 'fernan');
 // Retorno esperado: false
+
