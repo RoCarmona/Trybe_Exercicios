@@ -3,9 +3,9 @@
   <body>
     <header>
       <h2 id="page-title">Título</h2>
-      <p id="paragraph">Dê uma cor para este parágrafo!</p>
+      <p class="para" id="paragraph">Dê uma cor para este parágrafo!</p>
       <h4 id="subtitle">Subtítulo</h4>
-      <p id="second-paragraph">Segundo parágrafo!</p>
+      <p class="para" id="second-paragraph">Segundo parágrafo!</p>
     </header>
     <script>
       const paragraph = document.getElementById("paragraph");
@@ -25,28 +25,24 @@
       beHappy.innerText = 'Que Felicidade!!'
       beHappy.style.color = 'green'
 
+      // 4 - Adicione uma classe igual para os dois parágrafos.
+      // 5 - Recupere os seus parágrafos via código JavaScript, usando a função getElementsByClassName;
+      // 6 - Altere algum estilo do primeiro deles.
+      const paragraphs = document.getElementsByClassName("para");
+      paragraphs[0].style.fontSize = '30px';
+      paragraphs[0].style.color = 'orange';
 
-    //   let paragraphs = document.getElementsByClassName('para');
-    //   paragraph.style.color = 'red';
+      const subtitle = document.getElementsByTagName('h4')[0];
+      subtitle.style.color = 'green'; 
 
-    //   let subtitle = document.getElementsByTagName('h4')[0];
-    //   subtitle.style.color = 'green';
 
     </script>
   </body>
 </html>
 
-
-
-
-
-
-
-
-
 <!--  Utilizando o mesmo template de exercício anterior: -->
-<!-- 4 - Adicione uma classe igual para os dois parágrafos. -->
-<!-- 5 - Recupere os seus parágrafos via código JavaScript, usando a função getElementsByClassName; -->
-<!-- 6 - Altere algum estilo do primeiro deles. -->
+
+
+
 <!-- 7 - Recupere o subtítulo e altere a cor dele usando a função getElementsByTagName. -->
 <!-- 8 - Por fim, há uma função única que você pode usar para fazer todos esses acessos, a querySelector. -->
